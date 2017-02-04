@@ -1,7 +1,7 @@
 .layout {
     &-base {
         @include make-container();
-        max-width: 640px;
+        max-width: 380px;
     }
 
     &-row {
@@ -16,7 +16,7 @@
         }
 
         &-half {
-            @include make-col(6);
+            @include make-col(3);
             text-align: center;
 
             &--left {
@@ -28,4 +28,21 @@
             }
         }
     }
+
+    &-free {
+        position: fixed;
+        left:0;
+        bottom: 15px;
+        right: 0;
+    }
+
+    &-mb10 {
+        margin-bottom: 10px;
+    }
+
+    &-mb100 {
+        margin-bottom: 100px;
+    }
+
+    
 }

@@ -383,7 +383,7 @@ html {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 640px; }
+  max-width: 380px; }
   @media (min-width: 576px) {
     .layout-base {
       padding-right: 15px;
@@ -448,16 +448,53 @@ html {
   .layout-col-base {
     width: 100%; }
   .layout-col-half {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 25%;
+    max-width: 25%;
     text-align: center; }
     .layout-col-half--left {
       text-align: left; }
     .layout-col-half--right {
       text-align: right; }
 
-.input-date {
-  width: 50%;
+.layout-free {
+  position: fixed;
+  left: 0;
+  bottom: 15px;
+  right: 0; }
+
+.layout-mb10 {
+  margin-bottom: 10px; }
+
+.layout-mb100 {
+  margin-bottom: 100px; }
+
+.input-block {
+  font-size: 1em;
+  margin-bottom: 10px; }
+  .input-block__label {
+    font-size: 0.8em;
+    font-style: italic; }
+  .input-block__input {
+    font-size: 1.8em;
+    width: 100%;
+    line-height: 4rem;
+    display: inline-block;
+    border-top: 1px solid #29B6F6;
+    border-bottom: 1px solid #29B6F6; }
+  .input-block__control {
+    font-size: 0.7em;
+    color: #29B6F6;
+    padding: 1px 0;
+    text-align: center; }
+
+body {
+  background-color: #212121;
+  color: #eee; }
+
+.btn {
+  width: 100%;
+  background-color: #00C853;
   border: none;
-  border-bottom: 1px solid black;
-  text-align: center; }
+  padding: 10px 0;
+  color: #eee;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }

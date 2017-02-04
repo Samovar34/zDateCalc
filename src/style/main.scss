@@ -5,11 +5,25 @@ $enable-grid-classes: false;
 @import "../../bower_components/bootstrap/scss/bootstrap-grid";
 
 @import "variables";
+
+// layouts
 @import "layout";
 
-.input-date {
-    width: 50%;
-    border: none;
-    border-bottom: 1px solid black;
-    text-align: center;
+// blocks
+
+@import "input";
+
+body {
+    background-color: #212121;
+    color: #eee;
 }
+
+.btn {
+    width: 100%;
+    background-color: #00C853;
+    border: none;
+    padding: 10px 0;
+    color: #eee;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
