@@ -376,3 +376,88 @@ html {
 *::before,
 *::after {
   box-sizing: inherit; }
+
+.layout-base {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 640px; }
+  @media (min-width: 576px) {
+    .layout-base {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .layout-base {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .layout-base {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .layout-base {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.layout-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media (min-width: 576px) {
+    .layout-row {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 768px) {
+    .layout-row {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 992px) {
+    .layout-row {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 1200px) {
+    .layout-row {
+      margin-right: -15px;
+      margin-left: -15px; } }
+
+.layout-col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 576px) {
+    .layout-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .layout-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .layout-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .layout-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  .layout-col-base {
+    width: 100%; }
+  .layout-col-half {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center; }
+    .layout-col-half--left {
+      text-align: left; }
+    .layout-col-half--right {
+      text-align: right; }
+
+.input-date {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center; }

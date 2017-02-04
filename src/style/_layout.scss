@@ -1,0 +1,31 @@
+.layout {
+    &-base {
+        @include make-container();
+        max-width: 640px;
+    }
+
+    &-row {
+        @include make-row();
+    }
+
+    &-col {
+        @include make-col-ready();
+
+        &-base {
+            width: 100%;
+        }
+
+        &-half {
+            @include make-col(6);
+            text-align: center;
+
+            &--left {
+                text-align: left;
+            }
+
+            &--right {
+                text-align: right;
+            }
+        }
+    }
+}

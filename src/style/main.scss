@@ -3,3 +3,13 @@ $enable-grid-classes: false;
 
 @import "../../bower_components/bootstrap/scss/bootstrap-reboot";
 @import "../../bower_components/bootstrap/scss/bootstrap-grid";
+
+@import "variables";
+@import "layout";
+
+.input-date {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
