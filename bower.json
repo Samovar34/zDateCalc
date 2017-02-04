@@ -1,0 +1,25 @@
+{
+  "name": "z-date-calc",
+  "description": "вычисление сроков по заявкам",
+  "main": "gulpfile.js",
+  "authors": [
+    "unscript"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "z",
+    "date",
+    "calc"
+  ],
+  "homepage": "https://github.com/unscript/zDateCalc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

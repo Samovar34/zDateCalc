@@ -1,0 +1,5 @@
+// отменить импорт предустановленных классов grid
+$enable-grid-classes: false;
+
+@import "../../bower_components/bootstrap/scss/bootstrap-reboot";
+@import "../../bower_components/bootstrap/scss/bootstrap-grid";
