@@ -1,20 +1,17 @@
 console.log("Z DATE CALC V0.0.1");
 
+
 window.onload = function () {
     var inputBlock = $("#input-block");
+    var calcButton = $("#calc-btn");
 
-    inputBlock.on("mousedown", function (e) {
-        console.log("click");
-        e.preventDefault();
-    });
+    inputBlock.on("mousedown", mainHnadler);
 
     inputBlock.on("dblclick", function (e) {
-        console.log("dblclick");
         e.preventDefault();
     });
 
     inputBlock.on("selectstart", function (e) {
-        console.log("selectstart");
         e.preventDefault();
     });
 
@@ -24,6 +21,20 @@ window.onload = function () {
 
     window.ondblclick = function (e) {
         e.preventDefault();
+    }
+
+    calcButton.on("click", inputModule.calculate);
+
+    function mainHnadler(e) {
+        e.preventDefault();
+
+        var $target = $(e.target);
+
+        console.log(typeof $target.data("action"));
+
+        if ($target.data("elem")) {
+           inputModule.handleInput($target.data("elem"), $target.data("action"));
+        }
     }
 
 
