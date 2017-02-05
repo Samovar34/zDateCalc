@@ -1,6 +1,6 @@
 {
   "name": "z-date-calc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "вычисление сроков по заявкам",
   "main": "gulpfile.js",
   "scripts": {

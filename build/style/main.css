@@ -460,7 +460,16 @@ html {
   position: fixed;
   left: 0;
   bottom: 15px;
-  right: 0; }
+  right: 0;
+  z-index: 100; }
+
+.layout-all {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 99; }
 
 .layout-mb10 {
   margin-bottom: 10px; }
@@ -495,6 +504,18 @@ body {
   background-color: #212121;
   color: #eee; }
 
+.bg {
+  background-color: #212121; }
+
+.center {
+  text-align: center; }
+
+.f3 {
+  font-size: 3em; }
+
+.f4 {
+  font-size: 4em; }
+
 .btn {
   width: 100%;
   background-color: #00C853;
@@ -508,3 +529,12 @@ body {
     background-color: #388E3C; }
   .btn:focus {
     outline-style: none; }
+
+.version {
+  position: absolute;
+  color: #aaa;
+  right: 0;
+  top: 0;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 5px; }

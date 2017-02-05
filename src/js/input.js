@@ -212,6 +212,8 @@ var inputModule = (function () {
 
         __printDate(endDate);
 
+        return endDate;
+
 
     }
 

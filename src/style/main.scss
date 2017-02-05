@@ -18,6 +18,22 @@ body {
     color: #eee;
 }
 
+.bg {
+    background-color: #212121;
+}
+
+.center {
+    text-align: center;
+}
+
+.f3 {
+    font-size: 3em;
+}
+
+.f4 {
+    font-size: 4em;
+}
+
 .btn {
     width: 100%;
     background-color: #00C853;
@@ -35,5 +51,15 @@ body {
     &:focus {
         outline-style: none;
     }
+}
+
+.version {
+    position: absolute;
+    color: #aaa;
+    right: 0;
+    top: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 5px;
 }
 
