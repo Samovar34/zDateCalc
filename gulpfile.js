@@ -1,5 +1,7 @@
 const gulp = require("gulp"),
       scss = require("gulp-sass"),
+      cleanCss = require("gulp-clean-css"),
+      uglify = require("gulp-uglify"),
       del  = require("del"),
       include = require("gulp-file-include"),
       browserSync = require("browser-sync").create();
@@ -51,10 +53,9 @@ gulp.task("build:style", () => {
     gulp.src(path.src.style)
         .pipe(scss().on("error", scss.logError))
         //add autoprefixer
-        //add minify
+        .pipe(cleanCss())
         .pipe(gulp.dest(path.build.style));
 });
-
 
 // build js
 gulp.task("build:js", () => {
@@ -63,7 +64,7 @@ gulp.task("build:js", () => {
         .pipe(include({
             prefix: "@@"
         }))
-        // uglify
+        .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
 });
 
