@@ -485,7 +485,11 @@ html {
     font-size: 0.7em;
     color: #29B6F6;
     padding: 1px 0;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
+    .input-block__control:active {
+      background-color: #29B6F6;
+      color: #212121; }
 
 body {
   background-color: #212121;
@@ -497,4 +501,10 @@ body {
   border: none;
   padding: 10px 0;
   color: #eee;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  outline-style: none;
+  cursor: pointer; }
+  .btn:active {
+    background-color: #388E3C; }
+  .btn:focus {
+    outline-style: none; }

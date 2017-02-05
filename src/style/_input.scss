@@ -21,5 +21,11 @@
         color: #29B6F6;
         padding: 1px 0;
         text-align: center;
+        cursor: pointer;
+
+        &:active {
+            background-color: #29B6F6;
+            color: #212121;
+        }
     }
 }
