@@ -7,8 +7,8 @@ window.onload = function () {
     var resultBlock = $("#result-block");
     var calcButton = $("#calc-btn");
 
-    var id6 = $("#id6");
-    var id7 = $("#id7");
+    var id6 = $("#id6"); // вывод результата (дата)
+    var id7 = $("#id7"); // вывод результата (время)
 
     // обработка ввода
     inputBlock.on("mousedown", mainHnadler);
