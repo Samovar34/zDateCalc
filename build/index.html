@@ -17,7 +17,7 @@
         </div>
         <!-- -->
         <div class="layout-row layout-mb10">
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Число</div>
                     <div class="input-block__control" data-action="1" data-elem="id0">+</div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <!-- -->
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Месяц</div>
                     <div class="input-block__control" data-action="1" data-elem="id1">+</div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <!-- -->
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Часы</div>
                     <div class="input-block__control" data-action="1" data-elem="id2">+</div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!-- -->
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Минуты</div>
                     <div class="input-block__control" data-action="1" data-elem="id3">+</div>
@@ -67,10 +67,10 @@
         </div>
         <!-- -->
         <div class="layout-row layout-mb100">
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
             </div>
             <!-- -->
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Часы</div>
                     <div class="input-block__control" data-action="1" data-elem="id4">+</div>
@@ -81,17 +81,17 @@
                 </div>
             </div>
             <!-- -->
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
                 <div class="input-block">
                     <div class="input-block__label">Минуты</div>
                     <div class="input-block__control" data-action="1" data-elem="id5">+</div>
                     <div>
-                        <div id="id5" class="input-block__input" data-min="0" data-max="59">00</div>
+                        <div type="number" id="id5" class="input-block__input" data-min="0" data-max="59" data-action="3" data-elem="5">00</div>
                     </div>
                     <div class="input-block__control" data-action="0" data-elem="id5">-</div>
                 </div>
             </div>
-            <div class="layout-col layout-col-half">
+            <div class="layout-col layout-col__3">
             </div>
         </div>
         
@@ -103,7 +103,33 @@
         <button id="calc-btn" class="btn">Расчет</button>
     </div>
 </div>
-    
+    <div class="layout layout-input input">
+    <div class="layout-input-bottom">
+        <div class="layout-input-top">
+            <span class="input-text">0</span>
+        </div>
+        <div class="layout-row">
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--top">1</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--top">2</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--top">3</button></div>
+        </div>
+        <div class="layout-row">
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">4</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">5</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">6</button></div>
+        </div>
+        <div class="layout-row">
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">7</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">8</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn">9</button></div>
+        </div>
+        <div class="layout-row">
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--bottom input-btn--ok">Ok</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--bottom">0</button></div>
+            <div class="layout-col layout-col__4 nopadding"><button class="input-btn input-btn--bottom input-btn--del">Del</button></div>
+        </div>
+    </div>
+</div>
     <div id="result-block" class="layout layout-all bg" style="display: none">
     <div class="layout-base">
         <!-- -->

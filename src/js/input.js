@@ -56,6 +56,13 @@ var inputModule = (function () {
         var isDate = id == "id0";
         var isMonth = id == "id1";
 
+        // hardcode 
+        if (action == "3") {
+            console.log("action 3");
+            // показать ввод данных
+            return;
+        }
+
         // проверка условий ввода (+/-)
         if (action == "1") {
             curValue++;
@@ -229,6 +236,7 @@ var inputModule = (function () {
 
     return {
         handleInput: handleInput,
-        calculate: calculate
+        calculate: calculate,
+        checkDate: checkDate
     };
 })();

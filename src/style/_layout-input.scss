@@ -1,0 +1,65 @@
+.layout-input {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &-top {
+        text-align: center;
+    }
+
+    &-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.input-text {
+    font-size: 3rem;
+}
+.input-btn {
+    border: 2px solid #000;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: #353535;
+    color: #fff;
+    outline: none;
+
+    &:active {
+        background-color: #111;
+    }
+
+    &--top {
+        border-top-width: 4px;
+    }
+
+    &--bottom {
+        border-bottom-width: 4px;
+    }
+
+    &--ok {
+        background-color: #27ae60;
+
+        &:active {
+            background-color: #135b31;
+        }
+    }
+
+    &--del {
+        background-color: #c0392b;
+
+        &:active {
+            background-color: #862c22;
+        }        
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

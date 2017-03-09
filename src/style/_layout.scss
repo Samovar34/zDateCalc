@@ -15,7 +15,7 @@
             width: 100%;
         }
 
-        &-half {
+        &__3 {
             @include make-col(3);
             text-align: center;
 
@@ -26,6 +26,11 @@
             &--right {
                 text-align: right;
             }
+        }
+
+        &__4 {
+            @include make-col(4);
+            text-align: center;
         }
     }
 

@@ -8,6 +8,7 @@ $enable-grid-classes: false;
 
 // layouts
 @import "layout";
+@import "layout-input";
 
 // blocks
 
@@ -61,5 +62,9 @@ body {
     font-size: 0.8em;
     font-style: italic;
     padding: 5px;
+}
+
+.nopadding {
+    padding: 0;
 }
 

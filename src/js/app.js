@@ -11,7 +11,7 @@ window.onload = function () {
     var id7 = $("#id7"); // вывод результата (время)
 
     // обработка ввода
-    inputBlock.on("mousedown", mainHnadler);
+    inputBlock.on("mousedown", mainHandler);
 
     // Отмена событий по умолчанию
     inputBlock.on("dblclick", function (e) {
@@ -34,7 +34,7 @@ window.onload = function () {
     calcButton.on("click", function () {
         if (resultBlock.css("display") === "none") {
             showResult(inputModule.calculate());
-            calcButton.html("скрыть");
+            calcButton.html("Скрыть");
         } else {
             hideResult();
             calcButton.html("Расчет");
@@ -44,7 +44,7 @@ window.onload = function () {
     });
 
     // обработка ввода
-    function mainHnadler(e) {
+    function mainHandler(e) {
         e.preventDefault();
 
         var $target = $(e.target);
@@ -58,16 +58,16 @@ window.onload = function () {
     function showResult(date) {
         resultBlock.css("display", "block");
         var year = date.getFullYear();
-        var month = date.getMonth() + 1;
-        var day = date.getDate();
-        var hours = date.getHours();
-        var min = date.getMinutes();
+        var month = inputModule.checkDate(date.getMonth(), true); // к месяцу +1
+        var day = inputModule.checkDate(date.getDate(), false);
+        var hours = inputModule.checkDate(date.getHours(), false);
+        var min = inputModule.checkDate(date.getMinutes(), false);
 
-        id6.html(day + "-" + month + "-" + year);
-        id7.html(hours + "-" + min);
+        id6.html(day + "." + month + "." + year);
+        id7.html(hours + ":" + min);
     }
 
-    // скрыть результат
+    // скрыть и очистить результат
     function hideResult() {
         resultBlock.css("display", "none");
         id6.html(" ");
