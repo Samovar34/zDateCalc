@@ -1,8 +1,6 @@
 var inputModule = (function () {
     var cache = {};
 
-
-
     // текущий год
     var year = null;
 
@@ -43,6 +41,10 @@ var inputModule = (function () {
     cache["id3"].html(curDate.minutes);
 
     // Обработка ввода
+    // id {String} id поля ввода
+    // action - id действия
+    //   0 - вычитание
+    //   1 - сложение
     function handleInput(id, action) {
         // если нет такого элемента, то добавить в кеш
         if (!cache[id]) {
@@ -50,6 +52,7 @@ var inputModule = (function () {
         }
 
         // получает текущее значение поля
+        // и преобразуем его в число
         var curValue = parseFloat(cache[id].html());
 
         // проверка условий ввода (день/месяц)
@@ -234,6 +237,7 @@ var inputModule = (function () {
         console.log(startDate.getSeconds());
     }
 
+    // публичные методы
     return {
         handleInput: handleInput,
         calculate: calculate,

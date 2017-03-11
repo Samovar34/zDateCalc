@@ -74,3 +74,7 @@ window.onload = function () {
         id7.html(" ");
     }
 }
+
+window.addEventListener("orientationchange", function () {
+    alert(window.orientation);
+});
